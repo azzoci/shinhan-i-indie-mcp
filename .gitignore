@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.venv_x86/
+dist/
+build/
+*.egg-info/
+
+# Project-root markdown notes (internal docs/plans), keep README
+/*.md
+!/README.md
+
+# Vendor Shinhan Indi query/catalog/license files (redistribution TBD)
+qry/

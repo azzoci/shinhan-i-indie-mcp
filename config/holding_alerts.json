@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "tick_interval_seconds": 5,
+  "refresh_interval_seconds": 45,
+  "price_stale_seconds": 180,
+  "order_book_stale_seconds": 180,
+  "daily_refresh_interval_seconds": 3600,
+  "market_refresh_interval_seconds": 300,
+  "order_book_refresh_interval_seconds": 45,
+  "atr_multiplier_step": 0.2,
+  "duplicate_suppression_minutes": 30,
+  "bundle_window_seconds": 60,
+  "daily_alert_limit": 20,
+  "per_symbol_fatigue_count": 5,
+  "default_profile": {
+    "category": "대형주",
+    "atr_multiplier": 2.0,
+    "support_tolerance_pct": 0.5,
+    "observe_only": true,
+    "validation_passed": false,
+    "buy_base_ratios": {
+      "1차 반등형": 0.2,
+      "2차 반등형": 0.15,
+      "추세복귀 확인형": 0.25
+    }
+  },
+  "categories": {
+    "대형주": {
+      "atr_multiplier": 2.0,
+      "support_tolerance_pct": 0.5
+    },
+    "ETF": {
+      "atr_multiplier": 1.6,
+      "support_tolerance_pct": 0.4
+    },
+    "우선주": {
+      "atr_multiplier": 2.2,
+      "support_tolerance_pct": 0.7
+    },
+    "성장주": {
+      "atr_multiplier": 2.5,
+      "support_tolerance_pct": 1.0
+    }
+  },
+  "stocks": {
+    "000660": {
+      "name": "SK하이닉스",
+      "category": "대형주",
+      "atr_multiplier": 2.0,
+      "support_tolerance_pct": 0.5,
+      "observe_only": true,
+      "validation_passed": false,
+      "sector_code": "2155",
+      "sector_name": "코스피200 정보기술"
+    },
+    "005930": {
+      "name": "삼성전자",
+      "category": "대형주",
+      "atr_multiplier": 2.0,
+      "support_tolerance_pct": 0.5,
+      "observe_only": true,
+      "validation_passed": false,
+      "sector_code": "2155",
+      "sector_name": "코스피200 정보기술"
+    },
+    "381170": {
+      "name": "TIGER 미국테크TOP10 INDXX",
+      "category": "ETF",
+      "atr_multiplier": 1.6,
+      "support_tolerance_pct": 0.4,
+      "observe_only": true,
+      "validation_passed": false,
+      "overseas_etf": true,
+      "fx_index": "usdkrw",
+      "overseas_index": "nasdaq",
+      "sector_code": "",
+      "sector_name": ""
+    },
+    "069500": {
+      "name": "KODEX 200",
+      "category": "ETF",
+      "atr_multiplier": 1.5,
+      "support_tolerance_pct": 0.4,
+      "observe_only": true,
+      "validation_passed": false,
+      "sector_code": "2101",
+      "sector_name": "KOSPI200"
+    },
+    "005387": {
+      "name": "현대차2우B",
+      "category": "우선주",
+      "atr_multiplier": 2.2,
+      "support_tolerance_pct": 0.7,
+      "observe_only": true,
+      "validation_passed": false,
+      "sector_code": "2151",
+      "sector_name": "코스피200 경기소비재"
+    },
+    "462870": {
+      "name": "시프트업",
+      "category": "성장주",
+      "atr_multiplier": 2.5,
+      "support_tolerance_pct": 1.0,
+      "observe_only": true,
+      "validation_passed": false,
+      "sector_code": "2154",
+      "sector_name": "코스피200 커뮤니케이션서비스"
+    }
+  },
+  "risk_keywords": [
+    "거래정지",
+    "상장폐지",
+    "관리종목",
+    "횡령",
+    "배임",
+    "감사의견",
+    "불성실공시",
+    "유상증자",
+    "실적악화"
+  ],
+  "mechanical_keywords": [
+    "분배락",
+    "배당락",
+    "기준가격"
+  ]
+}
